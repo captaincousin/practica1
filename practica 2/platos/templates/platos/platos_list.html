@@ -1,0 +1,22 @@
+{% extends 'platos/base_generic.html' %}
+{% block content %}
+<h4>Listado de Platos</h4>
+        <table class="table table-bordered">
+            <thead class="bg-primary">
+                <tr>
+                    <td>Nombre</td>
+                    <td>Precio</td>
+                    <td>Procedencia</td>
+                </tr>
+            </thead>
+            <tbody>
+                {% for platos in data reversed %}
+                <tr>
+                    <td>{{platos.nombre}}</td>
+                    <td>{{platos.precio}}</td>
+                    <td>{{platos.procedencia}}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+{% endblock %}

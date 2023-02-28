@@ -1,0 +1,28 @@
+{% extends 'meseros/base_generic.html' %}
+{% block content %}
+<html>
+<head>
+    <title>Meseros</title>
+</head>
+<body>
+    <h1>Meseros</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>País</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for mesero in meseros %}
+            <tr>
+                <td>{{ mesero.nombre }}</td>
+                <td>{{ mesero.pais }}</td>
+                <td>{{ mesero.edad }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
