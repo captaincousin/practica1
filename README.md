@@ -1,2 +1,2 @@
-# practica1
-APP RESTAURANTE PARA PRACTICA 1
+# Practicas - Python Intermedio
+Proyecto: APP Restaurante
